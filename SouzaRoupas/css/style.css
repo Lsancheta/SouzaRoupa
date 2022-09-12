@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0
+}
+
+body{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+}
+
+nav{
+    margin-bottom: 5.0rem;
+    display:flex;
+}
+.menu h1{
+    font-size: 10px;
+    text-align:left;
+    padding: 1.5px 0 1.5px 1.5px;
+    color:white;
+    width:0;
+    background-color:#333;
+    
+}
+.menu ul{
+    margin:0 auto;
+    list-style: none;
+    border:0px solid #c0c0c0;
+    float:left;
+}
+.menu li{
+position:relative;
+float:left;
+border-right:0px solid #c0c0c0;
+}
+.menu li a{
+    color:#333;
+    text-decoration:none;
+    padding:5px 10px;
+    display:grid;
+}
+
+.menu li a:hover{
+    background:#333;
+    color:#fff;
+    -moz-box-shadow:0 3px 10px #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+rolamento{
+    background-color: #333;
+    width:max-content;
+    border: 100px;
+    width: 100%;
+}
