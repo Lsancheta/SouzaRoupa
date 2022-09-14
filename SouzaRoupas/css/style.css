@@ -33,6 +33,17 @@ nav{
 }
 #menu li{
 position:relative;
+    #footer{
+    align-items:center;
+}
+
+.header__logo-container{
+    display: flex;
+    align-items:center;
+    width:calc(100/3);
+    left:0;
+    height:100%;
+}
 float:left;
 border-right:0px solid #c0c0c0;
 }
