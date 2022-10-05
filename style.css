@@ -116,6 +116,22 @@ align-items: center;
     flex-direction: row;
     justify-content:space-around;
 }
+
+#localizacao{
+    display:flex;
+    align-items: initial;
+}
+.mapa{
+    display:flex;
+    margin-top: 5px;
+}
+.mapa-local{
+    width: 300px;
+    font-size:16px;
+}
+.contato{
+margin-top: 112px;
+}
 /* MEDIA QUERY PARA TIPOS DIFERENTES DE TELAS - REPONSIVIDADE
         @media screen (max-width:700px) {
         body {
