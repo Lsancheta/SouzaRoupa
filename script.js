@@ -1,3 +1,6 @@
+// SCRIPT DA TROCA DE IMAGENS  //
+
+/*
 let time = 4000,
     currentImageIndex = 0,
     images = document.querySelectorAll('#slider img');
@@ -24,3 +27,18 @@ let time = 4000,
     }
 
     window.addEventListener("load", start)
+
+    */
+
+// SCRIPT DO MODAL POPUP PARA APARECER  //
+    function iniciaModal(modalID){
+        var modal = document.getElementById(modalID);
+        modal.classList.add('mostrar');
+        modal.addEventListener('click', (e) =>{
+            if(e.target.id == modalID || e.target.className =='fechar'){
+                modal.classList.remove('mostrar');
+            }
+        })
+    }
+    var logo
+    iniciaModal('modal-informacao');
