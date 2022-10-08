@@ -113,7 +113,6 @@ align-items: center;
 .elemento-collum{
     display:flex;
     margin-left:15px;
-    flex-direction: row;
     justify-content:space-around;
 }
 
@@ -131,6 +130,65 @@ align-items: center;
 }
 .contato{
 margin-top: 112px;
+}
+
+.modal-container{
+    width:100vw;
+    height:100vh;
+    /* alpha de 0.5 para ficar um pouco transparente*/
+    background:rgba(0,0,0,.5);
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:2000;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.mostrar{
+    display:flex;
+}
+
+.modal{
+    background-color: white;
+    width:60%;
+    min-width:300px;
+    padding:40px;
+    border:6px solid;
+    box-shadow:0 0 0 10px white;
+    position:relative;
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform:translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform:translate3d(0,0,0);
+    }
+}
+
+.mostrar .modal{
+    animation:modal .3s;
+}
+
+.fechar{
+    position:absolute;
+    top:-30px;
+    right:-30px;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: #EA0000;
+    color:white;
+    font-family: monospace;
+    cursor: pointer;
+    box-shadow:0 4px 4px 0 rgba(0,0,0,.3);
+    font-size: 1.2em;
 }
 /* MEDIA QUERY PARA TIPOS DIFERENTES DE TELAS - REPONSIVIDADE
         @media screen (max-width:700px) {
