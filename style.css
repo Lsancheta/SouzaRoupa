@@ -3,6 +3,11 @@
     padding:10px;
     align-items: center;
 }
+.loader{
+    position: fixed;
+    background-color: aliceblue;
+
+}
 body{
     font-family: arial, helvetica, sans-serif;
     font-size: 20px;
@@ -46,27 +51,35 @@ nav a:hover {
     background-color: #D6D6D6;
     border-bottom: 3px solid #EA0000;
   }
-
-  #slider{
-    margin-bottom:auto;
-    align-items:center;
-    width: 60%;
-    max-width: 500px;
-    height: 100px;
-    max-height: 750px;
-    position:relative;
-}
-#slider img{
-    opacity: 0;
-    position:absolute;
-    width:100%;
-    height: 100%;
-    object-fit:cover;
+.div-banner{
+    background-color: #858585;
+    height:650px;
 }
 
-#slider img.selected{
-    opacity:1;
-}
+.titulo{
+    display: flex;
+    justify-content: center; /* centraliza o texto horizontalmente */
+    align-items: center; /* centraliza as linhas verticalmente */
+    margin: 30px 0; /* 30px -> margens superior e inferior */
+ }
+ 
+ .titulo::before,
+ .titulo::after{
+    content: '';
+    position: relative;
+    height: 1px; /* espessura das linhas */
+    background: #666; /* cor das linhas */
+    min-width: 50px; /* largura mínima das linhas */
+    flex-grow: 1; /* distribui a largura das linhas por igual */
+ }
+ 
+ .titulo span{
+    color: #666; /* cor do texto */
+    padding: 0 15px; /* distancia do texto às linhas */
+    font-weight: bold; /* negrito */
+    font-size: 2em; /* tamanho do texto */
+ }
+
 #vitrine{
     display:flex;
     width:auto;
@@ -198,6 +211,4 @@ margin-top: 112px;
         }
         
     }
-
     */
-    
