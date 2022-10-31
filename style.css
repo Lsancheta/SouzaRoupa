@@ -13,8 +13,6 @@ body{
 
 }
 
-
-
 header{
     position: relative;
     top:5px;
@@ -47,20 +45,15 @@ nav a:hover {
     border-bottom: 3px solid #EA0000;
   }
 
-  #banner-rotativo{
-    width: auto;
-    height:500px;
-    z-index: 998;
-    background-color:#8f69a5;
-  }
+
 
   #slider{
     width: auto;
-    height: 450px;
+    height: 500px;
   }
   #slider .selected{
-   width: 1850px;
-   height:490px;
+   width: 1700px;
+   height:500px;
 }
 
 #slider img{
@@ -242,4 +235,3 @@ nav a:hover {
         
     }
     */
-    
